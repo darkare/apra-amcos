@@ -44,3 +44,16 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+#Setup
+
+1092  npm install react-bootstrap bootstrap
+ 1093  npm i -save-dev @types/graphql
+ 1094  mv ~/Downloads/introspectionSchema.json .
+ 1095  ls introspectionSchema.json
+ 1096  npx apollo codegen:generate --localSchemaFile=introspectionSchema.json --target=typescript --tagName=gql
+ 1099  npm install --save-dev typescript @tsconfig/recommended graphql-codegen @graphql-codegen/cli @graphql-codegen/typescript 
+ 1100  npm run generate-gql-types
+
+dfong@Daryls-Air apra-amcos % 

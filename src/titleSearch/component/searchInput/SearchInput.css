@@ -1,0 +1,24 @@
+.search-icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 9999; /*this will keep the icon appearing all time, even when on input::focus*/
+  }
+
+  .search-container {
+      display:flex;
+      flex-direction:row;
+      align-items: center;
+  }
+
+  .search-input {
+      margin: 10px;
+      width: 80%
+  }
+
+  .search-button {
+      width:20%;
+      height: 41px;
+      margin-right: 10px;
+      
+}
