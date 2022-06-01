@@ -19,7 +19,6 @@ import {
   SearchOptions,
 } from '../../../shared/gql-types'
 
-
 interface Photo {
   id: number
   title: string
@@ -190,7 +189,10 @@ const PhotoListing = () => {
           })}
       </Container>
       <div className="row-spacer"></div>
-      <Pagination>{paginationItems}</Pagination>
+      <div >
+        {/* <Pagination style={{display:'flex', flexWrap:'wrap'}}>{paginationItems}</Pagination> */}
+        <Pagination className="pagination-wrap">{paginationItems}</Pagination>
+      </div>
     </>
   )
 }
